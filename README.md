@@ -4,16 +4,17 @@
 - Docker
 - Python 3.9
 - Postman
+- A virtual Python environnement
 
 ## With Docker
 - In a terminal :
 	- Go to root project path
-	- `docker build -t myimage .`
-	- `docker --rm -p 8888:8888 myimage`
+	- `docker build -t myimage .` *replace myimage with the name you want to give it*
+	- `docker --rm -p 8888:8888 myimage` *replace myimage with the name you want to give it*
 - In Postman :
 	- `curl --location 'localhost:8888/productionplan' \
 --header 'Content-Type: application/json' \
---data 'myJSON'`
+--data 'myJSON'` *replace myJSON with the Json you want to send*
 	- OR
 	- `POST /productionplan HTTP/1.1
 Host: localhost:8888`
@@ -26,7 +27,7 @@ Host: localhost:8888`
 - In Postman :
 	- `curl --location 'localhost:8888/productionplan' \
 --header 'Content-Type: application/json' \
---data 'myJSON'`
+--data 'myJSON'` *replace myJSON with the Json you want to send*
 	- OR
 	- `POST /productionplan HTTP/1.1
 Host: localhost:8888`
